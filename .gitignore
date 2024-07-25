@@ -31,4 +31,3 @@ override.tf.json
 
 # lock files
 .terraform.lock.hcl
-workflow-files

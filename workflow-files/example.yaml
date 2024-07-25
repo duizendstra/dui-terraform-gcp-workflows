@@ -1,0 +1,7 @@
+- step1:
+    call: http.get
+    args:
+        url: "https://jsonplaceholder.typicode.com/todos/1"
+    result: response
+- step2:
+    return: ${response.body}

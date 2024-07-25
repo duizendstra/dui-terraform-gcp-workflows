@@ -20,6 +20,7 @@ resource "google_workflows_workflow" "main" {
   description = each.value.description
 
   source_contents = templatefile("workflow-files/${each.value.source_file}", {
+    region    = var.region
     project   = var.project_id
     api_hosts = var.api_hosts
     datasets  = var.datasets
